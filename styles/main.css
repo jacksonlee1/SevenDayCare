@@ -83,6 +83,12 @@ body{
     justify-content: end; 
     padding-right: 5vw; 
     }
+    .hero-text{
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+
+    }
 }
 #nav {
     margin:0;
@@ -144,6 +150,8 @@ a{
 .btn-secondary{
     color:white;
     background-color: #e25812;
+    border:none;
+    margin:2vh
 }
 .btn:hover{
     opacity: .75;
@@ -175,6 +183,7 @@ a{
     max-width: 25%;
     min-width: 300px;
     margin:0 12.5%;
+   
 }
 .hero-title{
     font-size: 34pt;
@@ -195,11 +204,23 @@ a{
 .footer{
     width: 100%;
     display: flex;
-  
+    color:white;
+    background: #000;
+    flex-direction: row; 
 }
 .footer-logo{
-    width:2vw;
+    width:100px;
  
+}
+.footer-logo img{
+    width: 100%;
+}
+.footer-items{
+    list-style-type: none;
+    
+}
+.footer a{
+    color:white;
 }
 .logo img{
     margin-left: 2vw;
@@ -215,7 +236,8 @@ a{
     text-align:center;
     color:white;
     padding:5vh;
-    background-color:#e25812 ;
+    background-color:#115caa ;
+    margin:0;
 }
 .cards{
     margin-left:12.5%;
@@ -250,7 +272,89 @@ a{
     
 }
 
+#about{
+    margin-top: 10rem;
+}
+.block{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 50vh;
+    width: 100%;
+    
+}
+.left{
+    float:left;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding:2vh;
+    
+    width: 100%;
+    @media screen and (min-width:48em) {
+        width: 50dvw;
+    }
+}
 
+.right{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding:2vh;
+    margin:0;
+    float:right;
+    
+    width: 100%;
+   
+}
+@media screen and (min-width:48em) {
+    .right,.left{
+        width: 50%;
+    }
+}
+
+
+.row{
+    display: flex;
+    flex-direction: row;
+}
+
+.block-img{
+    min-width: 500px;
+}
+.block-text{
+    background: #115caa;
+
+    color:white;
+}
+
+
+.contact{
+    margin: 0;
+    display: flex;
+    background-color: #115caa;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.contact form{
+    margin:0 12.5%;
+    height: 100%;
+    width: 75%;
+    flex-direction: column;
+    display: flex;
+}
+
+.contact-input, .contact-textarea{
+
+    display: flex;
+    padding:2vh;
+    margin:2vh;
+    font-size: large;
+    border-radius: 10px;
+}
 
 
 

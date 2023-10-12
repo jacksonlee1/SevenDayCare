@@ -6,6 +6,7 @@
     <title>Communication and Compassion is everything</title>
     <link rel="stylesheet" href="./styles/main.css">
     <link rel="stylesheet" href="./styles/animation.css">
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
 </head>
 <body>
     <div id="nav">
@@ -15,7 +16,7 @@
             </div>
         </div>
         
-            <div class="nav-dropdown"  onclick="dropdown()"><img height="50px" width="50px" src="../assets/Icons/menu.png" alt="" srcset=""></div>
+            <div class="nav-dropdown"  onclick="dropdown()"><img height="50px" width="50px" src="/assets/Icons/menu.png" alt="" srcset=""></div>
             <ul class="nav-items">
                 <li><a href="/about">About</a></li>
                 <li><a href="/services">Services</a></li>
@@ -38,23 +39,25 @@
             </div>
 
         </div>
-        <h1 class="sec-head">How we can help you:</h1>
-        <div class="cards">
-            
-            <div class="card" data-animation="slideInUp" data-animation-delay="300ms" data-animation="slideInUp" data-animation-delay="300ms">
-                <div class="card-body"><img src="/assets/icons/car.png" alt=""></div>
-                <div class="card-title">
+        
+            <section id="services">
+                <h1 class="sec-head">How we can help you:</h1>
+                <div class="cards">
+                    
+                    <div class="card" data-animation="slideInUp" data-animation-delay="300ms" data-animation="slideInUp" data-animation-delay="300ms">
+                        <div class="card-body"><img src="/assets/icons/car.png" alt=""></div>
+                        <div class="card-title">
                     <h4>Mobility & Transportation</h4>
                 </div>
-                <div class="card-footer"><a class="btn btn-primary" href="/about#mobility">Learn More</a></div>
+                <div class="card-footer"><a class="btn btn-primary" href="pages/about.html#mobility">Learn More</a></div>
             </div>
             <div class="card" data-animation="slideInUp" data-animation-delay="300ms">
-                <div class="card-body"><img src="/assets/icons/foodpng" alt=""></div>
+                <div class="card-body"><img src="/assets/icons/food.png" alt=""></div>
                 <div class="card-title">
                     <h4>Meal Preparation</h4>
                 </div>
                 <div class="card-footer">
-                    <a class="btn btn-primary" href="/about#mealPrep">Learn More</a>
+                    <a class="btn btn-primary" href="/pages/about.html#mealPrep">Learn More</a>
                 </div>
             </div>
             <div class="card " data-animation="slideInUp" data-animation-delay="300ms">
@@ -62,20 +65,20 @@
                 <div class="card-title">
                     <h4>Medication Reminders</h4>
                 </div>
-
+                
                 <div class="card-footer">
-                    <a class="btn btn-primary" href="/about#medication">Learn More</a>
+                    <a class="btn btn-primary" href="/pages/about.html#medication">Learn More</a>
                 </div>
             </div>
             <div class="card " data-animation="slideInUp" data-animation-delay="300ms">
                 <div class="card-body"><img src="/assets/icons/wash.png" alt="">
-
+                    
                 </div>
                 <div class="card-title" >
                     <h4>Personal Hygiene</h4>
                 </div>
                 <div class="card-footer">
-                    <a class="btn btn-primary" href="/about#hygiene">Learn More</a>
+                    <a class="btn btn-primary" href="/pages/about.html#hygiene">Learn More</a>
                 </div>
             </div>
             <div class="card" data-animation="slideInUp" data-animation-delay="300ms">
@@ -84,7 +87,7 @@
                     <h4>Housekeeping</h4>
                 </div>
                 <div class="card-footer">
-                    <a class="btn btn-primary" href="/about#housekeeping">Learn More</a>
+                    <a class="btn btn-primary" href="/pages/about.html#housekeeping">Learn More</a>
                 </div>
             </div>
             <div class="card" data-animation="slideInUp" data-animation-delay="300ms">
@@ -93,36 +96,63 @@
                     <h4>Companionship</h4>
                 </div>
                 <div class="card-footer">
-                    <a class="btn btn-primary" href="/about#companionship">Learn More</a>
+                    <a class="btn btn-primary" href="/pages/about.html#companionship">Learn More</a>
                 </div>
             </div>
         </div>
-
-        
-        <div class="contact">
-            <a class="btn btn-phone" href="tel:3177227377">Call Us!</a>
-
-            <a class="btn btn-email" href="/contact">Email</a>
-            
-
+    </section>
+    <section id="about">  
+        <h1 class="sec-head">Why Us?</h1>
+    <div class="block">
+        <div class="left block-img"  data-animation="slideInLeft" data-animation-delay="300ms">
+            <img src="https://source.unslpash.com/random/500x300/?Comfort,home" alt="">
         </div>
+        <div class="right block-text"  data-animation="slideInRight" data-animation-delay="300ms">
+            <h3>Our goal is to ensure you can stay independent in your home as long as possible</h3>
+        </div>
+    </div>
+    <div class="block">
+        <div class="left block-text"  data-animation="slideInLeft" data-animation-delay="300ms"><h3>Our staff prides our selves on providing our clientele with exceptional quality care</h3></div>
+        <div class="right block-img"  data-animation="slideInRight" data-animation-delay="300ms"><img src="https://source.unslpash.com/random/500x300/?Care" alt=""></div>
 
 
     </div>
-    <!-- <div class="footer">
-        <div class="footer-logo">
-            <img src="../assets/logo.jpg" alt="">
-        </div>
+</section>
+    <h2 class="sec-head">Questions?</h2>
+       
 
-        <ul class="footer-items">
-            <li><a href="/about">About</a></li>
-            <li><a href="/services">Services</a></li>
-            <li><a href="/contact">Contact</a></li>
-        </ul>
 
-        <p>&copy;Seven Day Peaceful Personal Care Services LLC 2023</p>
-        <p>Web design by <a href="https://jacksondlee.com">Jackson Lee</a></p>
-    </div> -->
+        <div class="footer">
+            
+                <div class="left">
+                        <div class="footer-logo">
+                            <img src="../assets/logo.jpg" alt="">
+                        </div>
+                
+                        <ul class="footer-items">
+                            <li><a href="/about">About</a></li>
+                            <li><a href="/services">Services</a></li>
+                            <li><a href="/contact">Contact</a></li>
+                        </ul>
+                        <p style="padding:2vh;margin:2vh">&copy;Seven Day Peaceful Personal Care Services LLC 2023</p>
+                        <p style="display: flex; padding:2vh;margin:2vh; align-self:end;">Web design by: <a href="https://jacksondlee.com"> Jackson Lee</a></p>
+                    </div>
+             
+            
+            <div class="right">
+                <div class="contact">
+                    <a class="btn btn-phone" href="tel:3177227377">Call Us!</a>
+                    <form action="mailto:Sevendaypeacefulpersonalcare@gmail.com">
+                        <input class="contact-input" type="text" name="email" id="email" placeholder="Email"> 
+                        <input class="contact-input" type="text" name="subject" id="subject" placeholder="subject">
+                        <textarea class="contact-textarea" name="body" id="body" cols="30" rows="10"></textarea>
+                        <button class="btn btn-secondary" type="submit">Email</button>
+                    </form>
+                    
+            </div>
+            
+    </div>
+    </div>
     <script src="main.js"></script>
 </body>
 </html>
