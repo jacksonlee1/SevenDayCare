@@ -1,0 +1,257 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+body{
+    margin:0;
+}
+@media only screen and (max-width: 51em) {
+    .hero-img{
+       position: absolute;
+       top:5rem;
+       width: 100%;
+       z-index: -1;
+    }
+
+    .hero-text h1{
+        margin-top: 0;
+        margin-bottom: 10vh;
+    }
+
+    .nav-dropdown{
+        position: relative;
+        right: 0;
+        display:flex;
+        height: 100%;
+        align-items: center;
+        
+    }
+    .nav-items{
+        
+            display: none;
+            position: absolute;
+            right: 0;
+            top: 4rem;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            padding: 12px 16px;
+            z-index: 1;
+            list-style: none;
+          
+        /* display: none;
+        box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.5);
+-webkit-box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.5);
+-moz-box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.5); */
+    }
+}
+@keyframes slideRight {
+    0% {
+      opacity: 0;
+      transform: translateX(50%); 
+      
+    }
+    100% {
+      opacity: 1;
+      transform: none; 
+    
+    } 
+  }
+.active{
+   
+    animation-name: slideRight;
+    animation-delay: 0;
+    animation-duration: .5s;
+    display: block;
+}
+
+@media only screen and (min-width: 51em) {
+    .hero-img{
+        display: flex;
+        width: 50%;
+    }
+
+    .nav-dropdown{
+        display:none
+        
+    }
+    .nav-items {
+        display: flex;
+        width: 25%;
+        float:right;
+        list-style: none;
+    justify-content: end; 
+    padding-right: 5vw; 
+    }
+}
+#nav {
+    margin:0;
+    width: 100%;
+    height: 5rem;
+    position: fixed;
+    top:0;
+    z-index: 999;
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.5);
+-webkit-box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.5);
+-moz-box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.5);
+    
+}
+
+.nav-items{
+    
+}
+
+.nav-items li{
+    padding: 2vh; 
+}
+
+.nav-items li:hover{
+    border-radius: 1vh;
+    box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.5);
+-webkit-box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.5);
+-moz-box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.5);
+transition-duration: .5s;
+}
+
+.nav-logo{
+    width: 50%;
+    margin-left:25%;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+a{
+    text-decoration: none;
+    color:black;
+}
+
+.btn{
+    padding:2vh;
+    border-radius: 10px;
+    font-size: large;
+    
+}
+.btn-primary{
+    color:white;
+    background-color: #115caa;
+}
+.btn-secondary{
+    color:white;
+    background-color: #e25812;
+}
+.btn:hover{
+    opacity: .75;
+    box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.5);
+    -webkit-box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.5);
+    -moz-box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.5);
+    transition-duration: .2s;
+}
+.container{
+   top:0; 
+   position: absolute;
+   width: 100%;
+   display: block;
+
+}
+.logo{
+    height: 5rem;
+    min-width: 110px;
+}
+.hero{
+    margin-top:6rem;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap-reverse;
+}
+.hero-text{
+    height: 75%;
+    text-align: center;
+    max-width: 25%;
+    min-width: 300px;
+    margin:0 12.5%;
+}
+.hero-title{
+    font-size: 34pt;
+}
+
+.hero-subtitle{
+    font-size:24pt
+}
+
+
+.hero-btn{
+    background-color: #115caa;
+    color:white;
+    font-size:24pt;
+    margin-top: 2vh;
+}
+
+.footer{
+    width: 100%;
+    display: flex;
+  
+}
+.footer-logo{
+    width:2vw;
+ 
+}
+.logo img{
+    margin-left: 2vw;
+    height:100%
+}
+
+.hero-img img{
+
+    width: 100%;
+}
+.sec-head{
+    width:100%;
+    text-align:center;
+    color:white;
+    padding:5vh;
+    background-color:#e25812 ;
+}
+.cards{
+    margin-left:12.5%;
+    width: 75dvw;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card{
+    text-align: center;
+    width:300px;
+    height: 300px;
+    border-radius: 5px;
+    margin:2vw;
+    box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.25);
+    -webkit-box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.25);
+    -moz-box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.25);
+}
+.card-title{
+    height: 25%;
+   font-size: x-large;
+}
+.card-body{
+    padding:5vh;
+    margin:0;
+    height: 50%;
+}
+.card-footer{
+    height: 25%;
+    margin:0;
+    
+}
+
+
+
+
+
+
