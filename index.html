@@ -9,24 +9,24 @@
     <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
 </head>
 <body>
-    <div id="nav">
-        <div class="nav-logo">
-            <div class="logo">
-                <img src="/assets/logo.jpg" alt="">
-            </div>
-        </div>
-        
-            <div class="nav-dropdown"  onclick="dropdown()"><img height="50px" width="50px" src="/assets/Icons/menu.png" alt="" srcset=""></div>
-            <ul class="nav-items">
-                <li><a href="/about">About</a></li>
-                <li><a href="/services">Services</a></li>
-                <li><a href="/contact">Contact</a></li>
-            </ul>
-        </div>
-       
-    </div>
-
+   
     <div id="main" class="container">
+        <div id="nav">
+            <div class="nav-logo">
+                <div class="logo">
+                    <img src="assets/logo.jpg" alt="">
+                </div>
+            </div>
+            
+                <div class="nav-dropdown"  onclick="dropdown()"><img height="50px" width="50px" src="assets/icons/menu.png" alt="" srcset=""></div>
+                <ul class="nav-items">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+           
+        </div>
         <div class="hero">
             <div class="hero-text">
                 <h1 class="hero-title" >Seven Day Peaceful Personal Care</h1>
@@ -35,7 +35,7 @@
             </div>
             <!-- Our goal is to ensure you can stay independant in your home as long as possible. Our staff prides ourselves on providing our clientele with exceptional quality care. You can even have a family member care for you! -->
             <div class="hero-img">
-                <img src="/assets/hero1.jpg" alt="">
+                <img src="assets/hero1.jpg" alt="">
             </div>
 
         </div>
@@ -45,14 +45,14 @@
                 <div class="cards">
                     
                     <div class="card" data-animation="slideInUp" data-animation-delay="300ms" data-animation="slideInUp" data-animation-delay="300ms">
-                        <div class="card-body"><img src="/assets/icons/car.png" alt=""></div>
+                        <div class="card-body"><img src="assets/icons/car.png" alt=""></div>
                         <div class="card-title">
                     <h4>Mobility & Transportation</h4>
                 </div>
                 <div class="card-footer"><a class="btn btn-primary" href="pages/about.html#mobility">Learn More</a></div>
             </div>
             <div class="card" data-animation="slideInUp" data-animation-delay="300ms">
-                <div class="card-body"><img src="/assets/icons/food.png" alt=""></div>
+                <div class="card-body"><img src="assets/icons/food.png" alt=""></div>
                 <div class="card-title">
                     <h4>Meal Preparation</h4>
                 </div>
@@ -61,7 +61,7 @@
                 </div>
             </div>
             <div class="card " data-animation="slideInUp" data-animation-delay="300ms">
-                <div class="card-body"><img src="/assets/icons/pharmacy.png" alt=""></div>
+                <div class="card-body"><img src="assets/icons/pharmacy.png" alt=""></div>
                 <div class="card-title">
                     <h4>Medication Reminders</h4>
                 </div>
@@ -71,7 +71,7 @@
                 </div>
             </div>
             <div class="card " data-animation="slideInUp" data-animation-delay="300ms">
-                <div class="card-body"><img src="/assets/icons/wash.png" alt="">
+                <div class="card-body"><img src="assets/icons/wash.png" alt="">
                     
                 </div>
                 <div class="card-title" >
@@ -82,7 +82,7 @@
                 </div>
             </div>
             <div class="card" data-animation="slideInUp" data-animation-delay="300ms">
-                <div class="card-body"><img src="/assets/icons/broom.png" alt=""></div>
+                <div class="card-body"><img src="assets/icons/broom.png" alt=""></div>
                 <div class="card-title">
                     <h4>Housekeeping</h4>
                 </div>
@@ -91,7 +91,7 @@
                 </div>
             </div>
             <div class="card" data-animation="slideInUp" data-animation-delay="300ms">
-                <div class="card-body"><img src="/assets/icons/meeting.png" alt=""></div>
+                <div class="card-body"><img src="assets/icons/meeting.png" alt=""></div>
                 <div class="card-title">
                     <h4>Companionship</h4>
                 </div>
@@ -105,15 +105,15 @@
         <h1 class="sec-head">Why Us?</h1>
     <div class="block">
         <div class="left block-img"  data-animation="slideInLeft" data-animation-delay="300ms">
-            <img src="https://source.unslpash.com/random/500x300/?Comfort,home" alt="">
+            <img src="assets/block-img2.jpg" alt="">
         </div>
         <div class="right block-text"  data-animation="slideInRight" data-animation-delay="300ms">
             <h3>Our goal is to ensure you can stay independent in your home as long as possible</h3>
         </div>
     </div>
-    <div class="block">
-        <div class="left block-text"  data-animation="slideInLeft" data-animation-delay="300ms"><h3>Our staff prides our selves on providing our clientele with exceptional quality care</h3></div>
-        <div class="right block-img"  data-animation="slideInRight" data-animation-delay="300ms"><img src="https://source.unslpash.com/random/500x300/?Care" alt=""></div>
+    <div class="block wrap-reverse">
+        <div class="left block-text"  data-animation="slideInLeft" data-animation-delay="300ms"><h3>Our staff prides ourselves on providing our clientele with exceptional quality care</h3></div>
+        <div class="right block-img"  data-animation="slideInRight" data-animation-delay="300ms"><img src="assets/block-img1.jpg" alt=""></div>
 
 
     </div>
@@ -126,7 +126,7 @@
             
                 <div class="left">
                         <div class="footer-logo">
-                            <img src="../assets/logo.jpg" alt="">
+                            <img src="assets/logo.jpg" alt="">
                         </div>
                 
                         <ul class="footer-items">
@@ -140,14 +140,16 @@
              
             
             <div class="right">
-                <div class="contact">
-                    <a class="btn btn-phone" href="tel:3177227377">Call Us!</a>
+                <div id="contact" class="contact">
+                    <h2>Connect with us:</h2>
                     <form action="mailto:Sevendaypeacefulpersonalcare@gmail.com">
-                        <input class="contact-input" type="text" name="email" id="email" placeholder="Email"> 
-                        <input class="contact-input" type="text" name="subject" id="subject" placeholder="subject">
-                        <textarea class="contact-textarea" name="body" id="body" cols="30" rows="10"></textarea>
+                        <input class="contact-input" type="text" name="name" id="name" placeholder="Name"> 
+                        <input class="contact-input" type="text" name="subject" id="subject" placeholder="Subject">
+                        <textarea class="contact-textarea" name="body" id="body" cols="30" rows="10" placeholder="Body"></textarea>
                         <button class="btn btn-secondary" type="submit">Email</button>
                     </form>
+                    <h2>Or</h2>
+                    <a class="btn btn-phone btn-secondary" href="tel:3177227377">Call Us!</a>
                     
             </div>
             
