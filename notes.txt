@@ -1,0 +1,6 @@
+-carrers page
+-more diverse pictures
+-qr code for job application
+-admin-page
+	-job applicants
+	-
